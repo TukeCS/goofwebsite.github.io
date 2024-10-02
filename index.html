@@ -4,78 +4,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tuke OwO</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                font-family: 'Arial', sans-serif;
-                background-color: #a2dff7;
-                opacity: 0.95;
-                background-image: radial-gradient(circle, #d66ff2, #e7a0fa, #f3c4ff);
-                animation: gradientBG 10s ease infinite;
-                height: 100vh;
-                margin: 0;
-                padding: 20px;
-                overflow: hidden;
-            }
-            @keyframes gradientBG {
-                0% { background-position: 0% 50%; }
-                50% { background-position: 100% 50%; }
-                100% { background-position: 0% 50%; }
-            }
-
-            img {
-                max-width: 100%;
-                height: auto;
-                border: 2px solid #333;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                margin-bottom: 20px;
-                transition: transform 0.5s ease, box-shadow 0.5s ease;
-                animation: fadeIn 2s ease forwards;
-                opacity: 0;
-            }
-
-            img:hover {
-                transform: scale(1.05);
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            }
-
-            h1 {
-                color: #fff;
-                text-align: center;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-                font-weight: bold;
-                margin-bottom: 10px;
-                animation: fadeIn 1.5s ease forwards;
-                opacity: 0;
-            }
-
-            p {
-                font-size: 1.5em;
-                color: #fff;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-                margin: 0;
-                padding: 10px;
-                animation: fadeIn 2s ease forwards;
-                opacity: 0;
-            }
-            @keyframes fadeIn {
-                0% { opacity: 0; transform: translateY(20px); }
-                100% { opacity: 1; transform: translateY(0); }
-            }
-        </style>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <h1>From your fav shark</h1>
         <img src="img.jpg" alt="Image not found" />
-        <p>Je t'aime &lt;3</p>
+
+        <a href="https://www.youtube.com/@TukeShark">Youtube</a>
+        <a href="https://www.tiktok.com/@tukecs">TikTok</a>
+        <a href="https://www.instagram.com/tuke_owo">VRChat</a>
+        <p class="hidden-text">Je t'aime &lt;3</p>
     </body>
 </html>
