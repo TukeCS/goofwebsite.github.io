@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'ProggyClean';
+    src: url('ProggyClean.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: "Arial", sans-serif;
+    font-family: 'ProggyClean', monospace;
     background: linear-gradient(120deg, #0c0c0c, #1a1a1a);
     background-size: 200% 200%;
     animation: backgroundAnimation 15s ease infinite;
@@ -41,20 +46,42 @@ body {
     text-align: center;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.9);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 40px 20px;
     box-shadow:
         0 8px 30px rgba(0, 0, 0, 0.7),
-        0 0 40px rgba(0, 204, 255, 0.8);
+        0 0 40px rgba(0, 205, 50, 0.5);
     border: 3px solid rgba(50, 50, 50, 0.9);
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 300% 100%;
+    animation: rainbowAnimation 5s linear infinite;
+}
+
+@keyframes rainbowAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 img {
     max-width: 90%;
     height: auto;
-    border: 3px solid #00ccff;
+    border: 3px solid #32cd32;
     background: linear-gradient(to bottom, #1a1a1a, #333);
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     margin: 20px 0;
     transition:
@@ -65,23 +92,23 @@ img {
 
 img:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 16px rgba(0, 204, 255, 0.5);
+    box-shadow: 0 4px 16px rgba(50, 205, 50, 0.5);
 }
 
 h1 {
     font-weight: bold;
     margin-bottom: 20px;
-    color: #00ccff;
+    color: #32cd32;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    transition:
-        transform 0.3s ease,
-        color 0.3s ease;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease, color 0.3s ease; /* Add smooth transition for hover effect */
 }
 
 h1:hover {
     transform: scale(1.1);
-    color: #66ccff;
+    color: #66ff66;
 }
 
 .button-container {
@@ -100,7 +127,7 @@ h1:hover {
     text-decoration: none;
     background: linear-gradient(45deg, #1e1e1e, #3a3a3a);
     border: 3px solid rgba(50, 50, 50, 0.8);
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow:
         0 4px 10px rgba(0, 0, 0, 0.5),
         inset 0 0 10px rgba(50, 50, 50, 0.2);
