@@ -45,7 +45,7 @@ body {
     padding: 40px 20px;
     box-shadow:
         0 8px 30px rgba(0, 0, 0, 0.7),
-        0 0 40px rgba(0, 204, 255, 0.8);
+        0 0 40px rgba(0, 204, 255, 0.8); /* Blue glow */
     border: 3px solid rgba(50, 50, 50, 0.9);
 }
 
@@ -60,6 +60,7 @@ img {
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 img:hover {
@@ -117,6 +118,29 @@ h1:hover {
     box-shadow:
         0 4px 8px rgba(50, 50, 50, 0.6),
         inset 0 0 20px rgba(70, 70, 70, 0.4);
+}
+
+.heart {
+    position: absolute;
+    font-size: 3em;
+    color: red;
+    animation: pop 1s ease forwards;
+    pointer-events: none;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
 }
 
 @media (max-width: 768px) {
