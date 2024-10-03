@@ -10,19 +10,26 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: "Arial", sans-serif;
-    background: linear-gradient(120deg, #a2dff7 30%, #f3c4ff 70%);
-    background-size: 400% 400%;
-    animation: oceanWave 10s ease infinite;
+    background: linear-gradient(120deg, #2e8bc0 30%, #1e5b8b 70%);
+    background-size: 200% 200%;
+    animation: backgroundAnimation 15s ease infinite;
     padding: 20px;
     overflow: hidden;
+    position: relative;
 }
 
-@keyframes oceanWave {
+@keyframes backgroundAnimation {
     0% {
         background-position: 0% 50%;
     }
-    50% {
+    25% {
         background-position: 100% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
     }
     100% {
         background-position: 0% 50%;
@@ -33,54 +40,59 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
 }
 
 img {
     max-width: 90%;
     height: auto;
-    border: 2px solid #333;
+    border: 2px solid #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     margin: 20px 0;
     transition:
-        transform 0.5s ease,
-        box-shadow 0.5s ease;
-    opacity: 1;
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 h1 {
     font-weight: bold;
-    margin-bottom: 10px;
-    background: linear-gradient(45deg, #4287f5, #da7dff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     transition:
-        transform 0.5s ease,
-        letter-spacing 0.5s ease;
+        transform 0.3s ease,
+        color 0.3s ease;
 }
 
 h1:hover {
-    transform: scale(1.05) rotate(2deg);
-    letter-spacing: 2px;
+    transform: scale(1.1);
+    color: #ffdb4d;
 }
 
 .hidden-text {
     font-weight: bold;
     font-size: 1.5em;
-    background: linear-gradient(45deg, #4287f5, #da7dff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffcc00;
     user-select: none;
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    opacity: 1;
+    bottom: 20px;
+    left: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.hidden-text:hover {
+    transform: scale(1.1);
+    color: #ffdb4d;
 }
 
 .button-container {
@@ -92,15 +104,15 @@ h1:hover {
 
 .button {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 15px 40px;
     margin: 10px;
     font-size: 1.2em;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    background: linear-gradient(45deg, #7f7fff, #da7dff);
-    border: 2px solid #7f7fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #1e5b8b, #2e8bc0);
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease,
@@ -109,8 +121,8 @@ h1:hover {
 }
 
 .button:hover {
-    background: linear-gradient(45deg, #4287f5, #da7dff);
-    border-color: #4287f5;
+    background: linear-gradient(45deg, #ffcc00, #1e5b8b);
+    border-color: #004d00;
     transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
