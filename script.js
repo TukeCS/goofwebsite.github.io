@@ -3,7 +3,7 @@ document
   .addEventListener("click", function (e) {
     const heart = document.createElement("div");
     heart.classList.add("heart");
-    heart.textContent = "❤️ je t'aime ❤️";
+    heart.textContent = "❤️";
     document.body.appendChild(heart);
 
     // Position the heart near the mouse click
