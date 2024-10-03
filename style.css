@@ -83,25 +83,6 @@ h1:hover {
     color: #66ccff;
 }
 
-.hidden-text {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #00ccff;
-    user-select: none;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    transition:
-        transform 0.3s ease,
-        color 0.3s ease;
-}
-
-.hidden-text:hover {
-    transform: scale(1.1);
-    color: #66ccff;
-}
-
 .button-container {
     display: flex;
     flex-wrap: wrap;
