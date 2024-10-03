@@ -6,17 +6,15 @@
 
 body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    font-family: Arial, sans-serif;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Arial", sans-serif;
     background: linear-gradient(120deg, #a2dff7 30%, #f3c4ff 70%);
     background-size: 400% 400%;
-    animation: oceanWave 2s ease infinite;
-    height: 100vh;
+    animation: oceanWave 10s ease infinite;
     padding: 20px;
     overflow: hidden;
-    opacity: 0.95;
 }
 
 @keyframes oceanWave {
@@ -31,18 +29,22 @@ body {
     }
 }
 
+.container {
+    text-align: center;
+    color: #fff;
+}
+
 img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     border: 2px solid #333;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+    margin: 20px 0;
     transition:
         transform 0.5s ease,
         box-shadow 0.5s ease;
-    animation: fadeIn 2s ease forwards;
-    opacity: 0;
+    opacity: 1;
 }
 
 img:hover {
@@ -51,8 +53,6 @@ img:hover {
 }
 
 h1 {
-    color: #fff;
-    text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
     background: linear-gradient(45deg, #4287f5, #da7dff);
@@ -61,8 +61,6 @@ h1 {
     transition:
         transform 0.5s ease,
         letter-spacing 0.5s ease;
-    animation: fadeIn 1.5s ease forwards;
-    opacity: 0;
 }
 
 h1:hover {
@@ -70,31 +68,31 @@ h1:hover {
     letter-spacing: 2px;
 }
 
-p {
+.hidden-text {
+    font-weight: bold;
     font-size: 1.5em;
-    color: #fff;
-    margin: 0;
-    padding: 10px;
-    animation: fadeIn 2s ease forwards;
-    opacity: 0;
+    background: linear-gradient(45deg, #4287f5, #da7dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    opacity: 1;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 .button {
     display: inline-block;
     padding: 15px 30px;
     margin: 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #fff;
     text-decoration: none;
     background: linear-gradient(45deg, #7f7fff, #da7dff);
@@ -106,9 +104,6 @@ p {
         box-shadow 0.3s ease,
         background 0.3s ease,
         border-color 0.3s ease;
-    position: relative;
-    animation: fadeIn 2s ease forwards;
-    opacity: 0;
 }
 
 .button:hover {
@@ -116,16 +111,4 @@ p {
     border-color: #4287f5;
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.hidden-text {
-    background: linear-gradient(45deg, #4287f5, #da7dff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    user-select: none;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    opacity: 1;
-    text-shadow: none;
 }
