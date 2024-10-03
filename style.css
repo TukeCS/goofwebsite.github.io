@@ -45,14 +45,14 @@ body {
     padding: 40px 20px;
     box-shadow:
         0 8px 30px rgba(0, 0, 0, 0.7),
-        0 0 40px rgba(0, 204, 255, 0.8); /* Added blue shine */
+        0 0 40px rgba(0, 204, 255, 0.8);
     border: 3px solid rgba(50, 50, 50, 0.9);
 }
 
 img {
     max-width: 90%;
     height: auto;
-    border: 3px solid #00ccff; /* Solid blue border */
+    border: 3px solid #00ccff;
     background: linear-gradient(to bottom, #1a1a1a, #333);
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -64,15 +64,15 @@ img {
 
 img:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 16px rgba(0, 204, 255, 0.5); /* Light blue shadow on hover */
+    box-shadow: 0 4px 16px rgba(0, 204, 255, 0.5);
 }
 
 h1 {
     font-weight: bold;
     margin-bottom: 20px;
-    color: #00ccff; /* Base color */
+    color: #00ccff;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Restored solid color for text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     transition:
         transform 0.3s ease,
         color 0.3s ease;
