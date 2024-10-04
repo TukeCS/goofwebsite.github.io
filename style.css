@@ -210,7 +210,7 @@ h1:hover {
     position: fixed;
     top: 10px;
     left: 10px;
-    background: linear-gradient(45deg, #1e1e1e, #3a3a3a);
+    background: rgba(30, 30, 30, 0.9);
     border: 2px solid rgba(50, 50, 50, 0.8);
     color: white;
     padding: 10px 20px;
@@ -222,7 +222,7 @@ h1:hover {
 }
 
 #toggle-system-info:hover {
-    background: linear-gradient(45deg, #2a2a2a, #4a4a4a);
+    background: rgba(40, 40, 40, 0.9);
     transform: scale(1.05);
 }
 
@@ -232,13 +232,13 @@ h1:hover {
     left: 10px;
     font-size: 14px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: rgba(30, 30, 30, 0.9);
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: "ProggyClean", monospace;
     z-index: 1000;
     line-height: 1.6;
-    border: 3px solid rgba(50, 50, 50, 0.8);
+    border: 3px solid rgba(50, 50, 50, 0.9);
 }
 
 @media (max-width: 768px) {
@@ -254,7 +254,7 @@ h1:hover {
     right: 10px;
     font-size: 14px;
     color: white;
-    background: linear-gradient(45deg, #1e1e1e, #3a3a3a);
+    background: rgba(30, 30, 30, 0.9);
     padding: 10px;
     border-radius: 5px;
     font-family: "ProggyClean", monospace;
@@ -265,8 +265,8 @@ h1:hover {
 }
 
 #fps-counter:hover {
-  background: linear-gradient(45deg, #2a2a2a, #4a4a4a);
-    transform: scale(1.05);
+  background: rgba(30, 30, 30, 0.9);
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
