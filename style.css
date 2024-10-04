@@ -126,6 +126,23 @@ h1:hover {
     margin: 20px 0;
 }
 
+.hidden-text {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0);
+    z-index: 1000;
+    pointer-events: auto;
+    transition: color 0.3s ease;
+    width: 100px;
+    height: 30px;
+}
+
+.hidden-text:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .button {
     display: inline-block;
     padding: 15px 40px;
