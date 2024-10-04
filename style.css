@@ -205,3 +205,72 @@ h1:hover {
         font-size: 1em;
     }
 }
+
+#toggle-system-info {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(45deg, #1e1e1e, #3a3a3a);
+    border: 2px solid rgba(50, 50, 50, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "ProggyClean", monospace;
+    cursor: pointer;
+    z-index: 1001;
+    transition: all 0.3s ease;
+}
+
+#toggle-system-info:hover {
+    background: linear-gradient(45deg, #2a2a2a, #4a4a4a);
+    transform: scale(1.05);
+}
+
+#system-info {
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    font-family: "ProggyClean", monospace;
+    z-index: 1000;
+    line-height: 1.6;
+    border: 3px solid rgba(50, 50, 50, 0.8);
+}
+
+@media (max-width: 768px) {
+    #toggle-system-info,
+    #system-info {
+        display: none !important;
+    }
+}
+
+#fps-counter {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: white;
+    background: linear-gradient(45deg, #1e1e1e, #3a3a3a);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "ProggyClean", monospace;
+    z-index: 1000;
+    border: 3px solid rgba(50, 50, 50, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+#fps-counter:hover {
+  background: linear-gradient(45deg, #2a2a2a, #4a4a4a);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    #fps-counter {
+        display: none;
+    }
+}

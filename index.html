@@ -17,36 +17,39 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="container">
-            <h1>From Your Favorite Shark</h1>
-            <img
-                id="clickable-image"
-                draggable="false"
-                src="img.jpg"
-                alt="Image not found"
-            />
-            <div class="button-container">
-                <a class="button" href="https://www.youtube.com/@TukeShark"
-                    >YouTube</a
-                >
-                <a class="button" href="https://www.tiktok.com/@tukecs"
-                    >TikTok</a
-                >
-                <a
-                    class="button"
-                    href="https://vrchat.com/home/user/usr_8a10614c-f974-4eb6-89bf-35b81fd77fea"
-                    >VRChat</a
-                >
-                <a
-                    class="button"
-                    href="https://discord.com/"
-                    onclick="navigator.clipboard.writeText('tukecsgo'); alert('Discord username copied: tukecsgo'); return false;"
-                    >Discord</a
-                >
-            </div>
-        </div>
-        <div class="hidden-text">je t'aime <3 Subarashii</div>
-        <audio id="click-sound" src="music.mp3"></audio>
-        <script src="script.js"></script>
+      <div id="fps-counter"></div>
+      <button id="toggle-system-info" style="display: none;">Show System Info</button>
+      <div id="system-info" style="display: none;"></div>
+      <div class="container">
+          <h1>From Your Favorite Shark</h1>
+          <img
+              id="clickable-image"
+              draggable="false"
+              src="img.jpg"
+              alt="Image not found"
+          />
+          <div class="button-container">
+              <a class="button" href="https://www.youtube.com/@TukeShark"
+                  >YouTube</a
+              >
+              <a class="button" href="https://www.tiktok.com/@tukecs"
+                  >TikTok</a
+              >
+              <a
+                  class="button"
+                  href="https://vrchat.com/home/user/usr_8a10614c-f974-4eb6-89bf-35b81fd77fea"
+                  >VRChat</a
+              >
+              <a
+                  class="button"
+                  href="https://discord.com/"
+                  onclick="navigator.clipboard.writeText('tukecsgo'); alert('Discord username copied: tukecsgo'); return false;"
+                  >Discord</a
+              >
+          </div>
+      </div>
+      <div class="hidden-text">je t'aime <3 Subarashii</div>
+      <audio id="click-sound" src="music.mp3"></audio>
+      <script src="script.js"></script>
     </body>
 </html>
