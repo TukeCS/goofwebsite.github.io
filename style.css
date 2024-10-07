@@ -30,9 +30,6 @@ body {
     overflow: hidden;
 }
 
-
-
-
 @keyframes backgroundAnimation {
     0% {
         background-position: 0% 50%;
@@ -83,7 +80,6 @@ body {
     background-size: 300% 100%;
     animation: rainbowAnimation 5s linear infinite;
 }
-
 
 @keyframes rainbowAnimation {
     0% {
