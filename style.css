@@ -15,12 +15,23 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: "ProggyClean", monospace;
-    background: linear-gradient(120deg, #0c0c0c, #1a1a1a);
-    background-size: 200% 200%;
-    animation: backgroundAnimation 15s ease infinite;
+    background: 
+        linear-gradient(0deg, #0e0e0e 4px, transparent 4px),
+        linear-gradient(90deg, #0e0e0e 4px, transparent 4px),
+        linear-gradient(0deg, #151515 4px, transparent 4px),
+        linear-gradient(90deg, #151515 4px, transparent 4px);
+    background-size: 
+        16px 16px;
+    background-position: 
+        0 0,
+        8px 8px;
+    background-color: #0c0c0c;
     padding: 20px;
     overflow: hidden;
 }
+
+
+
 
 @keyframes backgroundAnimation {
     0% {
@@ -45,11 +56,11 @@ body {
     margin: 0 auto;
     text-align: center;
     color: #ffffff;
-    background: rgba(30, 30, 30, 0.9);
-    border-radius: 10px;
+    background: #111111;
     padding: 40px 20px;
-    border: 3px solid rgba(50, 50, 50, 0.9);
+    border: 3px solid #0a0a0a;
     position: relative;
+    box-shadow: inset 0 0 0 3px #303030;
 }
 
 .container::before {
@@ -73,6 +84,7 @@ body {
     animation: rainbowAnimation 5s linear infinite;
 }
 
+
 @keyframes rainbowAnimation {
     0% {
         background-position: 0% 50%;
@@ -87,7 +99,6 @@ img {
     height: auto;
     border: 3px solid #32cd32;
     background: linear-gradient(to bottom, #1a1a1a, #333);
-    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     margin: 20px 0;
     transition:
@@ -152,7 +163,6 @@ h1:hover {
     text-decoration: none;
     background: linear-gradient(45deg, #1e1e1e, #3a3a3a);
     border: 3px solid rgba(50, 50, 50, 0.8);
-    border-radius: 8px;
     box-shadow:
         0 4px 10px rgba(0, 0, 0, 0.5),
         inset 0 0 10px rgba(50, 50, 50, 0.2);
@@ -214,7 +224,6 @@ h1:hover {
     border: 2px solid rgba(50, 50, 50, 0.8);
     color: white;
     padding: 10px 20px;
-    border-radius: 5px;
     font-family: "ProggyClean", monospace;
     cursor: pointer;
     z-index: 1001;
@@ -234,7 +243,6 @@ h1:hover {
     color: white;
     background: rgba(30, 30, 30, 0.9);
     padding: 15px;
-    border-radius: 10px;
     font-family: "ProggyClean", monospace;
     z-index: 1000;
     line-height: 1.6;
@@ -256,7 +264,6 @@ h1:hover {
     color: white;
     background: rgba(30, 30, 30, 0.9);
     padding: 10px;
-    border-radius: 5px;
     font-family: "ProggyClean", monospace;
     z-index: 1000;
     border: 3px solid rgba(50, 50, 50, 0.8);
